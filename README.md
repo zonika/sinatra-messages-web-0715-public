@@ -1,6 +1,6 @@
 ---
-tags: sinatra, activerecord, post
-language: ruby
+  tags: sinatra, activerecord, post
+  language: ruby
   resources: 1
 ---
 
@@ -24,6 +24,7 @@ data out of the request in sinatra
 3. You need to edit messages.erb to iterate
 through all the @messages and print out the
 data
+
 ## Resources
 * [Sinatra Up and Running](http://books.flatironschool.com/books/101) - [Chapter 1 Taking the Stage](http://books.flatironschool.com/books/101), page 15
 * [Sinatra Up and Running](http://books.flatironschool.com/books/101) - [Fundamentals](http://books.flatironschool.com/books/101), page 29

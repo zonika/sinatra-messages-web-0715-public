@@ -1,7 +1,7 @@
 ---
   tags: sinatra, activerecord, post
   language: ruby
-  resources: 1
+  resources: 2
 ---
 
 # Sinatra Messages

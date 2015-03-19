@@ -3,17 +3,19 @@ task :environment do
 end
 
 namespace :db do
-  task :migrate => [:environment] do
-    require_relative './db/migrations/01_create_messages.rb'
-    CreateMessages.migrate(:up) if defined?(CreateMessages)
+  task :migrate => :environment do
+    ActiveRecord::Migrator.migrate('db/migrate')
   end
 
-  task :rollback => [:environment] do
-    require_relative './db/migrations/01_create_messages.rb'
-    CreateMessages.migrate(:down) if defined?(CreateMessages)
+  task :rollback => :environment do
+    ActiveRecord::Migrator.rollback('db/migrate')
+  end
+
+  task :drop => :environment do
+    ActiveRecord::Migrator.migrate('db/migrate', 0)
   end
 end
 
-task :console => [:environment] do
+task :console => :environment do
   Pry.start
 end

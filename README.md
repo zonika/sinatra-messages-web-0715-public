@@ -24,7 +24,3 @@ We're going to be build a simple messaging system using Sinatra. We'll be writin
 
 There are no tests. Just make it work.
 
-## Resources
-
-* [Sinatra Up and Running](http://books.flatironschool.com/books/101) - [Chapter 1 Taking the Stage](http://books.flatironschool.com/books/101), page 15
-* [Sinatra Up and Running](http://books.flatironschool.com/books/101) - [Fundamentals](http://books.flatironschool.com/books/101), page 29

@@ -1,8 +1,4 @@
----
-  tags: sinatra, activerecord, post, http, todo
-  language: ruby
-  resources: 2
----
+
 
 # Sinatra Messages
 
